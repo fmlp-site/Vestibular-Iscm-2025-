@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Vestibular</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+
+        /* Slider */
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        /* Cronograma */
+        .cronograma {
+            padding: 20px;
+            background-color: #e3f2fd;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .cronograma table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .cronograma th, .cronograma td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .cronograma th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .links a {
+            display: block;
+            padding: 15px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .links a:hover {
+            background-color: #003f8c;
+        }
+
+        /* Área de arquivos */
+        .arquivos {
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .arquivos ul {
+            list-style: none;
+            padding: 0;
+        }
+        .arquivos li {
+            margin-bottom: 10px;
+        }
+        .arquivos li a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .arquivos li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Informações do Vestibular</h1>
+    </header>
+
+    <!-- Slider de Imagens via URL -->
+    <div class="slider">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9Jpl2rTseJPFkCijLg3OTfzWO7vXigdJ8qPj-TIDqs_pkukna2mMFd8&s" alt="Imagem 1">
+    </div>
+
+    <!-- Links para Informações do Vestibular -->
+    <section class="links">
+        <a href="#inscricoes">Fazer Inscrição 2025</a>
+        <a href="#datas-prova">Datas das Provas</a>
+        <a href="#locais-prova">Locais de Prova</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#matriculas">Matrículas</a>
+    </section>
+
+    <!-- Cronograma Dinâmico -->
+    <section class="cronograma">
+        <h2>Cronograma do Vestibular</h2>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Atividade</th>
+            </tr>
+            <tr>
+                <td>01/12</td>
+                <td>Abertura das Inscrições</td>
+            </tr>
+            <tr>
+                <td>15/01</td>
+                <td>Encerramento das Inscrições</td>
+            </tr>
+            <tr>
+                <td>30/01</td>
+                <td>Divulgação dos Locais de Prova</td>
+            </tr>
+            <tr>
+                <td>10/02</td>
+                <td>Data da Prova</td>
+            </tr>
+            <tr>
+                <td>25/02</td>
+                <td>Divulgação dos Resultados</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Área para Arquivos do Vestibular -->
+    <section class="arquivos">
+        <h2>Arquivos do Vestibular</h2>
+        <ul>
+            <li><a href="https://sistema-ingresso-three.vercel.app/Index.html" download>Manual do Candidato</a></li>
+            <li><a href="documentos/editais.pdf" download>Editais do Vestibular</a></li>
+            <li><a href="documentos/provas-anteriores.pdf" download>Provas Anteriores</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
